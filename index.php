@@ -107,12 +107,12 @@ class App
         $data = [];
         for ($i = 1; $i <= 12; $i++) {
             $month = date("Y-m", strtotime(date('Y-m-01') . " +$i months"));
-            $thirdThursday = date("d-M-Y", strtotime("third Thursday of this month", strtotime($month)));
-            $firstMonday = date("d-M-Y", strtotime("first monday of this month ", strtotime($month)));
-            $lastFriday = date("d-M-Y", strtotime("last friday of this month", strtotime($month)));
+            $thirdThursday = date("d/m/Y", strtotime("third Thursday of this month", strtotime($month)));
+            $firstMonday = date("d/m/Y", strtotime("first monday of this month ", strtotime($month)));
+            $lastFriday = date("d/m/Y", strtotime("last friday of this month", strtotime($month)));
 
             $monthData = [];
-            array_push($monthData, $month, $firstMonday, $thirdThursday, $lastFriday);
+            array_push($monthData, date("m/Y", strtotime($month)), $firstMonday, $thirdThursday, $lastFriday);
             array_push($data, $monthData);
         }
 
