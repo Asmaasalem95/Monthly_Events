@@ -1,0 +1,20 @@
+•	Questions:
+
+1.	When the last time the client has received email?
+2.	What was the email content?
+3.	What is the steps the client took to send an email (client scenario).
+
+
+•	Assumptions:
+ 
+1.	The client subscription hasn’t done successfully 
+2.	The client unsubscribed by mistake 
+3.	The client subscription is suspended or any reason 
+4.	The mail server has an issue
+
+•	Actions:
+1.	Run unit tests
+2.	Test the subscription cycle manually 
+3.	Test the client scenario
+4.	Investigate the client subscription data
+5.	Debug the mail server configurations 
